@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(49, 48, 48);
+}
+
+/* Nav Bar */
+nav{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+  gap: 15px;
+}
+
+#searchInput, #searchBtn{
+  padding: 5px;
+}
+
+.burgerNlogo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.searchingVideoDiv{
+  border: 1px solid rgb(55, 52, 52);
+  /* padding: 5px 8px; */
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(55, 52, 52);
+  width: 500px;
+}
+
+#searchBtn{
+  border: none;
+  background-color: rgb(55, 52, 52);
+  padding: 5px;
+  flex: 1;
+}
+
+#searchInput{
+  flex: 9;
+  padding: 5px 10px;
+  font-size: 17px;
+  outline: none;
+}
+
+
+/* main section */
+.mainLeftAndRight{
+  display: flex;
+  /* align-items: center; */
+  /* border: 3px solid slateblue; */
+  height: 90vh;
+  /* overflow: auto; */
+  overflow-y: scroll;
+}
+
+.leftWithMenu{
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.leftWithMenu::-webkit-scrollbar {
+  display: none;
+}
+
+.rightWithVideo{
+  /* border: 2px solid #2e8b57; */
+  width: 1200px;
+  overflow-y: scroll;
+}
+
+.rightWithVideo::-webkit-scrollbar {
+  display: none;
+}
+
+
+#videos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Create a 3-column grid with equal width columns */
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    /* padding: 0px 13px; */
+    height: 350px;
+    width: 340px;
+    margin: 8px;
+  }
+
+  .card-Bottom {
+    display: flex;
+    padding: 5px 0px;
+    color: var(--White-Color, #fff);
+    font-size: 16px;
+    /* border: 2px solid rgb(246, 246, 246); */
+    gap: 10px;
+  }
+
+  .card-Bottom div{
+    margin-left: -12px;
+  }
+
+
+  .card-Bottom img{
+    border-radius: 50%;
+    scale: 0.5;
+    margin-top: -20px;
+  }
+  
+  #card p{
+    color: white;
+  }
+
+  .p-tags{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    /* border: 4px solid cadetblue;  */
+  }
+
+  .thumbnail{
+    width: 340px;
+    height: 190px;
+    overflow: hidden;
+    /* border: 4px solid cadetblue; */
+  }
+
